@@ -50,3 +50,24 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+scholar:
+  style: chicago-fullnote-bibliography-16th-edition
+  bibliography: publications.bib
+  bibtex_filters:
+    - latex
+    - smallcaps
+    - superscript
+  bibliography_template: bib
+  sort_by: year,month
+  order: descending
+  group_by: type
+  type_order: [book, patent, article, inproceedings, inbook, thesis]
+  type_names: {
+    book: Books,
+    patent: Patents,
+    article: Journal Articles,
+    inproceedings: Refereed Conference Articles,
+    inbook: Book Chapters,
+    thesis: Theses
+  }
